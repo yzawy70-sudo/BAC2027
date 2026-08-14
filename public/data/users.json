@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1786740598186",
+    "fullName": "يوسف عزاوي",
+    "email": "yzawy70@gmail.com",
+    "passwordHash": "$2b$12$x124kVgsfzijhsajaM7fS..t3sPoMbyvD.TunR7BJnN9omEYldH7K",
+    "createdAt": "2026-08-14T20:49:58.187Z"
+  },
+  {
+    "id": "1786741238555",
+    "fullName": "يوسف عزاوي",
+    "email": "yzawy70@gmail.co",
+    "passwordHash": "$2b$12$E8vooQPeY3Y6E0N6iidsOeuvcELg8pmJlPq.IGFvzQoq127z2Lnpy",
+    "createdAt": "2026-08-14T21:00:38.555Z"
+  }
+]
