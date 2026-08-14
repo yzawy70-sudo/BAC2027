@@ -1,0 +1,16 @@
+{
+  "name": "bac2027",
+  "version": "1.0.0",
+  "description": "منصة دراسة ومتابعة لطلاب بكالوريا 2027 في الجزائر",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-session": "^1.19.0"
+  }
+}
