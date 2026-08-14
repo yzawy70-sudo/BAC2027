@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>إنشاء حساب | BAC 2027</title>
+
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <div class="background-overlay"></div>
+
+        <!-- الشعار -->
+        <a href="/" class="brand">
+            <div class="brand-logo">B27</div>
+
+            <div class="brand-text">
+                <strong>BAC 2027</strong>
+                <span>طريقك نحو النجاح</span>
+            </div>
+        </a>
+
+        <!-- بطاقة التسجيل -->
+        <section class="auth-card register-card">
+
+            <div class="auth-header">
+                <span class="welcome-icon">🎓</span>
+
+                <h1>أنشئ حسابك</h1>
+
+                <p>
+                    ابدأ رحلتك نحو بكالوريا 2027
+                </p>
+            </div>
+
+            <form id="registerForm">
+
+                <!-- الاسم واللقب -->
+                <div class="input-group">
+                    <label for="fullName">الاسم واللقب</label>
+
+                    <div class="input-wrapper">
+                        <span class="input-icon">👤</span>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="أدخل اسمك ولقبك"
+                            autocomplete="name"
+                            required
+                            minlength="3"
+                        >
+                    </div>
+                </div>
+
+                <!-- البريد -->
+                <div class="input-group">
+                    <label for="email">البريد الإلكتروني</label>
+
+                    <div class="input-wrapper">
+                        <span class="input-icon">✉</span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <!-- كلمة المرور -->
+                <div class="input-group">
+                    <label for="password">كلمة المرور</label>
+
+                    <div class="input-wrapper">
+                        <span class="input-icon">🔒</span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="أنشئ كلمة مرور قوية"
+                            autocomplete="new-password"
+                            required
+                            minlength="6"
+                        >
+
+                        <button
+                            type="button"
+                            class="show-password"
+                            id="togglePassword"
+                            aria-label="إظهار كلمة المرور"
+                        >
+                            👁
+                        </button>
+                    </div>
+                </div>
+
+                <!-- تأكيد كلمة المرور -->
+                <div class="input-group">
+                    <label for="confirmPassword">تأكيد كلمة المرور</label>
+
+                    <div class="input-wrapper">
+                        <span class="input-icon">🔐</span>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="أعد كتابة كلمة المرور"
+                            autocomplete="new-password"
+                            required
+                            minlength="6"
+                        >
+
+                        <button
+                            type="button"
+                            class="show-password"
+                            id="toggleConfirmPassword"
+                            aria-label="إظهار كلمة المرور"
+                        >
+                            👁
+                        </button>
+                    </div>
+                </div>
+
+                <!-- رسالة -->
+                <div id="registerMessage" class="message"></div>
+
+                <!-- إنشاء الحساب -->
+                <button type="submit" class="login-button">
+                    <span>إنشاء الحساب</span>
+                    <span class="arrow">←</span>
+                </button>
+
+            </form>
+
+            <!-- تسجيل الدخول -->
+            <div class="register-link">
+                لديك حساب بالفعل؟
+                <a href="/login">تسجيل الدخول</a>
+            </div>
+
+        </section>
+
+        <!-- معلومات البكالوريا -->
+        <div class="exam-info">
+            <span>🎓</span>
+
+            <div>
+                <strong>بكالوريا 2027</strong>
+                <small>07 جوان 2027</small>
+            </div>
+        </div>
+
+        <footer>
+            <span>© 2026 BAC 2027</span>
+            <span>•</span>
+            <span>منصة تعليمية لطلاب الجزائر</span>
+        </footer>
+
+    </main>
+
+    <script src="/js/register.js"></script>
+
+</body>
+</html>

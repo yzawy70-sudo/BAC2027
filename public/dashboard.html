@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BAC 2027 | لوحة التحكم</title>
+
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="/dashboard" class="logo">
+
+                    <div class="logo-mark">
+                        B
+                    </div>
+
+                    <div>
+                        <strong>BAC<span>2027</span></strong>
+                        <small>منصة الدراسة</small>
+                    </div>
+
+                </a>
+
+
+                <nav class="navigation">
+
+                    <span class="nav-heading">
+                        القائمة
+                    </span>
+
+                    <a href="/dashboard" class="nav-link active">
+                        <span>⌂</span>
+                        الرئيسية
+                    </a>
+
+                    <a href="/subjects" class="nav-link">
+                        <span>▣</span>
+                        المواد
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <span>✎</span>
+                        التمارين
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <span>◔</span>
+                        تقدمي
+                    </a>
+
+
+                    <span class="nav-heading second">
+                        المزيد
+                    </span>
+
+                    <a href="#" class="nav-link">
+                        <span>◈</span>
+                        التحديات
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <span>□</span>
+                        البرنامج
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <span>♢</span>
+                        الأخبار
+                    </a>
+
+                    <a href="https://t.me/bac2027challenge"
+                       class="nav-link telegram-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <span>✈</span>
+                        قناة BAC 2027
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="nav-link">
+                    <span>⚙</span>
+                    الإعدادات
+                </a>
+
+                <button id="logoutButton" class="logout">
+                    <span>↪</span>
+                    تسجيل الخروج
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN
+        ========================== -->
+
+        <main class="main">
+
+            <!-- Header -->
+
+            <header class="header">
+
+                <button
+                    id="menuButton"
+                    class="menu-button"
+                    type="button"
+                    aria-label="القائمة"
+                >
+                    ☰
+                </button>
+
+
+                <div class="header-title">
+
+                    <span>
+                        لوحة التحكم
+                    </span>
+
+                </div>
+
+
+                <div class="header-user">
+
+                    <button
+                        class="notification"
+                        type="button"
+                        aria-label="الإشعارات"
+                    >
+                        ♢
+                        <i></i>
+                    </button>
+
+
+                    <div class="profile">
+
+                        <div
+                            class="avatar"
+                            id="userAvatar"
+                        >
+                            ?
+                        </div>
+
+                        <div class="profile-text">
+
+                            <strong id="userName">
+                                جاري التحميل...
+                            </strong>
+
+                            <small>
+                                طالب BAC 2027
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Content -->
+
+            <div class="content">
+
+
+                <!-- =========================
+                     WELCOME
+                ========================== -->
+
+                <section class="welcome">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            أهلاً بك في رحلتك 🎓
+                        </span>
+
+                        <h1>
+                            مرحبًا،
+                            <span id="welcomeName">
+                                طالبنا
+                            </span>
+                        </h1>
+
+                        <p>
+                            استمر في الدراسة، كل يوم يقربك من هدفك.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     COUNTDOWN
+                ========================== -->
+
+                <section class="exam-card">
+
+                    <div class="exam-info">
+
+                        <span>
+                            العد التنازلي للبكالوريا
+                        </span>
+
+                        <h2>
+                            BAC 2027
+                        </h2>
+
+                        <p>
+                            07 جوان 2027
+                        </p>
+
+                    </div>
+
+
+                    <div class="countdown">
+
+                        <div class="count">
+
+                            <strong id="days">
+                                --
+                            </strong>
+
+                            <span>
+                                يوم
+                            </span>
+
+                        </div>
+
+                        <div class="separator">
+                            :
+                        </div>
+
+                        <div class="count">
+
+                            <strong id="hours">
+                                --
+                            </strong>
+
+                            <span>
+                                ساعة
+                            </span>
+
+                        </div>
+
+                        <div class="separator">
+                            :
+                        </div>
+
+                        <div class="count">
+
+                            <strong id="minutes">
+                                --
+                            </strong>
+
+                            <span>
+                                دقيقة
+                            </span>
+
+                        </div>
+
+                        <div class="separator">
+                            :
+                        </div>
+
+                        <div class="count">
+
+                            <strong id="seconds">
+                                --
+                            </strong>
+
+                            <span>
+                                ثانية
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     QUICK STATS
+                ========================== -->
+
+                <section class="quick-stats">
+
+                    <div class="stat">
+
+                        <div class="stat-icon blue">
+                            ▣
+                        </div>
+
+                        <div>
+                            <span>
+                                الدروس
+                            </span>
+
+                            <strong>
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="stat-icon green">
+                            ✓
+                        </div>
+
+                        <div>
+                            <span>
+                                التمارين
+                            </span>
+
+                            <strong>
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="stat-icon orange">
+                            ★
+                        </div>
+
+                        <div>
+                            <span>
+                                النقاط
+                            </span>
+
+                            <strong>
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="stat-icon purple">
+                            ◔
+                        </div>
+
+                        <div>
+                            <span>
+                                التقدم
+                            </span>
+
+                            <strong>
+                                0%
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     SUBJECTS
+                ========================== -->
+
+                <section class="section">
+
+                    <div class="section-head">
+
+                        <div>
+
+                            <span>
+                                الدراسة
+                            </span>
+
+                            <h2>
+                                موادك الدراسية
+                            </h2>
+
+                        </div>
+
+<a href="/subjects">
+    عرض الكل
+    ←
+</a>
+
+                    </div>
+
+
+                    <div class="subjects">
+
+                        <a href="#" class="subject">
+
+                            <div class="subject-top">
+
+                                <div class="subject-icon math">
+                                    ∑
+                                </div>
+
+                                <span class="subject-arrow">
+                                    ←
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                الرياضيات
+                            </h3>
+
+                            <p>
+                                الدروس والتمارين
+                            </p>
+
+                            <div class="mini-progress">
+
+                                <div>
+                                    <span></span>
+                                </div>
+
+                                <small>
+                                    0%
+                                </small>
+
+                            </div>
+
+                        </a>
+
+
+                        <a href="#" class="subject">
+
+                            <div class="subject-top">
+
+                                <div class="subject-icon physics">
+                                    Φ
+                                </div>
+
+                                <span class="subject-arrow">
+                                    ←
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                الفيزياء
+                            </h3>
+
+                            <p>
+                                الدروس والتمارين
+                            </p>
+
+                            <div class="mini-progress">
+
+                                <div>
+                                    <span></span>
+                                </div>
+
+                                <small>
+                                    0%
+                                </small>
+
+                            </div>
+
+                        </a>
+
+
+                        <a href="#" class="subject">
+
+                            <div class="subject-top">
+
+                                <div class="subject-icon science">
+                                    DNA
+                                </div>
+
+                                <span class="subject-arrow">
+                                    ←
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                علوم الطبيعة
+                            </h3>
+
+                            <p>
+                                الدروس والتمارين
+                            </p>
+
+                            <div class="mini-progress">
+
+                                <div>
+                                    <span></span>
+                                </div>
+
+                                <small>
+                                    0%
+                                </small>
+
+                            </div>
+
+                        </a>
+
+
+                        <a href="#" class="subject">
+
+                            <div class="subject-top">
+
+                                <div class="subject-icon french">
+                                    FR
+                                </div>
+
+                                <span class="subject-arrow">
+                                    ←
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                الفرنسية
+                            </h3>
+
+                            <p>
+                                الدروس والتمارين
+                            </p>
+
+                            <div class="mini-progress">
+
+                                <div>
+                                    <span></span>
+                                </div>
+
+                                <small>
+                                    0%
+                                </small>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     LOWER GRID
+                ========================== -->
+
+                <div class="lower-grid">
+
+
+                    <!-- Today's task -->
+
+                    <section class="panel">
+
+                        <div class="section-head">
+
+                            <div>
+
+                                <span>
+                                    اليوم
+                                </span>
+
+                                <h2>
+                                    ماذا ستدرس اليوم؟
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="empty-state">
+
+                            <div class="empty-icon">
+                                ✦
+                            </div>
+
+                            <h3>
+                                لم تبدأ رحلتك بعد
+                            </h3>
+
+                            <p>
+                                اختر مادة وابدأ أول درس لك.
+                            </p>
+
+                            <a href="#">
+                                ابدأ الدراسة
+                                ←
+                            </a>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Progress -->
+
+                    <section class="panel progress-panel">
+
+                        <div class="section-head">
+
+                            <div>
+
+                                <span>
+                                    تقدمك
+                                </span>
+
+                                <h2>
+                                    هذا الأسبوع
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-circle">
+
+                            <div>
+
+                                <strong>
+                                    0%
+                                </strong>
+
+                                <span>
+                                    مكتمل
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="progress-note">
+                            ابدأ بالدراسة ليظهر تقدمك هنا.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Footer -->
+
+            <footer class="footer">
+
+                <span>
+                    © 2026 BAC 2027
+                </span>
+
+                <span>
+                    طريقك نحو النجاح يبدأ اليوم.
+                </span>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="/js/dashboard.js"></script>
+
+</body>
+
+</html>
